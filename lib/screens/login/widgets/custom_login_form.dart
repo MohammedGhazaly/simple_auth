@@ -10,6 +10,7 @@ class CustomLoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.sizeOf(context).height;
     return Form(
       child: Container(
         padding: EdgeInsets.all(24),
