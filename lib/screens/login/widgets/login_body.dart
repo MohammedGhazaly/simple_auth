@@ -71,6 +71,25 @@ class LoginViewBody extends StatelessWidget {
                   ),
                   SocialMediaAuth(icon: LineIcons.twitter),
                 ],
+              ),
+              SizedBox(
+                height: 12,
+              ),
+              Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Already have an account?",
+                    ),
+                    TextSpan(
+                        text: " Create one",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color.fromARGB(255, 5, 65, 38),
+                        )),
+                  ],
+                ),
+                textAlign: TextAlign.center,
               )
             ],
           ),
