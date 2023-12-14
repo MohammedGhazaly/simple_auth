@@ -46,7 +46,7 @@ class LoginViewBody extends StatelessWidget {
                       width: 16,
                     ),
                     Expanded(
-                      flex: 10,
+                      flex: 15,
                       child: CustomLoginForm(),
                     ),
                   ],

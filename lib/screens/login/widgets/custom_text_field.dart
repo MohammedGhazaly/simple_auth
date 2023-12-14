@@ -19,6 +19,12 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return "Email can't be empty";
+        }
+        return null;
+      },
       keyboardType: textInputType,
       obscureText: isObscure,
       decoration: InputDecoration(
